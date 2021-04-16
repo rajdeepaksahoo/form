@@ -1,0 +1,249 @@
+@keyframes animi {
+    10%{background-color: red; color: white; border-radius: 5%;}
+    20%{background-color: yellow; color: black; border-radius: 10%;}
+    30%{background-color: yellowgreen; color: brown; border-radius: 15%;}
+    40%{background-color: palevioletred; color: white; border-radius: 20%;}
+    50%{background-color: darkblue; color: white; border-radius: 25%;}
+    60%{background-color: orangered; color: white; border-radius: 25%;}
+    70%{background-color: palevioletred; color: white; border-radius: 20%;}
+    80%{background-color: yellowgreen; color: black; border-radius: 15%;}
+    90%{background-color: yellow; color: brown; border-radius: 10%;}
+    100%{background-color: red; color: white; border-radius: 5%;}
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: linear-gradient(to right, yellow, red); */
+    background-image: url(./freeimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 250px;
+    min-height: 440px;
+    /* font-family: 'Antonio', sans-serif; */
+    font-family: 'New Tegomin', serif;
+}
+body label{
+    color: white;
+}
+@media (min-width:500px){
+    
+    /* form{
+        display: flex;
+    } */
+    #btn{
+        position: absolute;
+        margin-top: 25px;
+    }
+    #s{
+        width: 100px;
+        height: 35px;
+        left: 30%;
+        border-radius: 10px;
+        background-color: #5cb85c;
+        color: white;
+        transition: 0.5s;
+        position: relative;
+    }
+    #r{
+        width: 100px;
+        height: 35px;
+        left: 50%;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        transition: 0.5s;
+        padding-left: 10px;
+        position: relative;
+    }
+    #s:hover{
+        width: 150px;
+        height: 55px;
+    }
+    #r:hover{
+        width: 150px;
+        height: 55px;
+    }
+    button:hover{
+        background-color: red;
+        color: white;
+    }
+    /* .pd{
+        padding: 10px;
+        margin: 5px;
+    }
+    .pd :hover{
+        background-color: wheat;
+        color: black;
+    } */
+    h3{
+        font-size: 25px;
+    }
+    #name{
+        margin-left: 5%;
+        margin-top: 5%;
+        padding: 4px;
+    }
+    #num{
+        margin-left: 5%;
+        padding: 4px;
+    }
+    #name label{
+        font-size: 16px;
+        padding-left: 6%;
+    }
+    #num label{
+        font-size: 16px;
+        padding-left: 6%;
+    }
+    #personal select{
+        padding-left: 10px;
+        height: 30px;
+    }
+    #personal label i{
+        margin-left:8%;
+        color: orangered;
+    }
+    input{
+        margin-left: 15px;
+        height: 40px;
+        width: 180%;
+    }
+    #select{
+        margin-left: 8.5%;  
+        margin-top: 10px;
+    }
+    #select label{
+        font-size: 16px;
+        margin-left: 9px;
+    }
+    #place{
+        margin-left: 10px;
+    }
+    #personal{
+        padding: 30px;
+        margin-left: 5%;
+        width: 20%;
+    }
+    #h{
+        
+        display: flex;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #result{
+        /* border: 1px solid green; */
+        box-sizing: border-box;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0,0,0 ,0.6);
+        width: 45%;
+        padding-bottom: 5%;
+        padding: 5%;
+        margin-left: 18%;
+        margin-top: 8%;
+        display: inline-block;
+        font-family: 'New Tegomin', serif;
+    }
+    form{
+        display: flex;
+    }
+}
+@media (max-width:500px){
+    
+    /* form{
+        display: flex;
+    } */
+    #s{
+        width: 70px;
+        height: 35px;
+        margin-left: 20%;
+        border-radius: 10px;
+        background-color: blueviolet;
+        color: white;
+        animation: animi 8s infinite;
+    }
+    #s:hover{
+        width: 90px;
+        height: 45px;
+    }
+    #r:hover{
+        width: 90px;
+        height: 45px;
+    }
+    #r{
+        width: 70px;
+        height: 35px;
+        margin-left: 5%;
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        margin-top: 2%;
+        animation: animi 8s infinite;
+    }
+    button:hover{
+        background-color: red;
+        color: white;
+    }
+    /* .pd{
+        padding: 10px;
+        margin: 5px;
+    }
+    .pd :hover{
+        background-color: wheat;
+        color: black;
+    } */
+    h3{
+        font-size: 25px;
+    }
+    #name{
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    #num{
+        margin-left: 5%;
+    }
+   
+    /* #name label{
+        font-size: 25px;
+        padding-left: 6%;
+    }
+    #num label{
+        font-size: 25px;
+        padding-left: 6%;
+    } */
+    /* #personal select{
+        padding-left: 10px;;
+    } */
+    /* input{
+        margin-left: 120px;
+    } */
+    #select{
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+    #select select{
+        margin-left: 12px;
+    }
+    /* #select label{
+        font-size: 25px;
+    } */
+    #personal{
+        padding: 30px;
+    }
+    #h{
+        
+        display: flex;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #personal {
+        padding-right: 5%;
+    }
+}

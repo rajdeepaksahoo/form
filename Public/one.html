@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="one.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon/android-chrome-192x192.png" type="image/png" sizes="16x16">
+    
+    
+</head>
+<body>
+    <main>
+        <form id="form" name="personal_details" onsubmit="return validation()">
+            <div id="personal">
+                <label for="personal" style="font-size: 25px;"><i>PERSONAL_DETAILS:-</i></label>
+                <div id="name">
+                    <label for="fn">First Name</label><br>
+                    <input name="fname" type="text" id="fn" class="fn" placeholder="First Name"><br>
+                    <label for="fn">Last Name</label><br>
+                    <input name="lname" type="text" id="ln" class="fn" placeholder="Last Name"><br>
+                    <label for="fn">Date Of Birth</label><br>
+                    <input name="dob" id="dob" type="date" class="fn" placeholder="Last Name">
+                    
+                </div> 
+                <br>
+                <div id="num">
+                    <label for="fn">Email Id </label><br>
+                    <input name="mail" id="mail" type="email" class="fn" placeholder="Email Id"><br>
+                    <label for="fn">Mobile Number</label><br>
+                    <input name="mob" id="mob" type="number" class="fn" placeholder="Number">
+                </div>
+                
+                <div id="select">
+                <label for="sel">Your Country</label><br>
+                    <select name="country" id="place" name="" >
+                        <!-- <option value="">
+                            Select Your Country
+                        </option> -->
+                        <option value="Australia">Australia</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="India" selected disabled hidden>India</option>
+                        <option value="U.K">U.K</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+                <div id="btn">
+                    <button id="s" onclick="add()">Submit</button>
+                    <button id="r" onclick="hide()">Reset</button>
+                </div>
+            </div>
+            
+            <div id="result">
+                <h2>Please Recheck All Details You Enter :-</h2><br>
+                <h4 id="show" ></h4><br>
+                <h4 id="show1" ></h4><br>
+                <h4 id="show2" ></h4><br>
+                <h4 id="show3" ></h4><br>
+                <h4 id="show4" ></h4><br>
+                <h4 id="show5" ></h4><br>
+                <button onclick="hide()" style="background-color: green; color: white; height: 35px; text-align: center; width: 150px; border-radius: 10px;">Continue..</button>
+            </div>
+        </form>
+        
+    </main>
+    <script src='one.js'></script>
+</body>
+</html>
